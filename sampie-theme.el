@@ -1,4 +1,4 @@
-;;; sampie-theme.el --- Sampie theme is a cool theme.
+;;; sampie-theme.el --- Sampie theme is a cool theme
 
 ;; Author: Sampie159 <Sampie159@users.noreply.github.com>
 ;; Version: 0.1
@@ -110,14 +110,11 @@
                                             :background ,background
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
-   `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
-  )
+   `(powerline-inactive2 ((t (:background ,background :foreground ,text)))))
 
   (custom-theme-set-variables
     'sampie
-    '(linum-format " %5i ")
-  )
-)
+    '(linum-format " %5i ")))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
