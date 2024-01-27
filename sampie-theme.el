@@ -28,21 +28,21 @@
       (selection  "#0000ff")
       (text       "#333333")
       (comments   "#004c4c")
-      (punctuation "#66b2b2")
+      (punctuation "#03396c")
       (keywords "#008080")
-      (variables "#3bd6c6")
+      (variables "#420420")
       (functions "#ffffff")
-      (methods    "#3bd6c6")
+      (methods    "#420420")
       (strings    "#ac1ee7")
       (constants "#ff084a")
-      (macros "#66b2b2")
+      (macros "#03396c")
       (numbers "#ff084a")
       (white     "#ffffff")
       (error "#cc0000")
       (warning "#b3ecec")
       (highlight-line "#b3ecec")
       (line-fg "#126367"))
-
+  
   (custom-theme-set-faces
    'sampie
 
