@@ -1,15 +1,19 @@
-;;; sampie-theme.el --- Sampie theme is a cool theme
+;;; sampie-theme.el --- Sampie's theme follows the idea of "minimal" highlighting
 
 ;; Author: Sampie159 <Sampie159@users.noreply.github.com>
 ;; Version: 0.1
 ;; Filename: sampie-theme.el
 ;; Package-Requires: ((emacs "24"))
-;; URL: https://github.com/Sampie159/sampie-theme.el
-;; License: MIT
+;; URL: https://github.com/Sampie159/sampie-theme
+;; SPDX-License-Identifier: MIT
 
 ;;; Commentary:
 
-;; Sampie's theme is based on the idea of Jon Blow's theme, but with colors I like.  ;)
+;; Sampie's theme is based on the idea of Jon Blow's theme, that is
+;; with "minimal" hightlighting, this means that hightlighting only happens
+;; in certain situations, such as type definitions, builtin keywords, variable
+;; declaration, etc...
+
 ;; This file structured is based on Nick Aversano's naysayer theme
 ;; https://github.com/nickav/naysayer-theme.el
 
@@ -20,28 +24,28 @@
 
 (deftheme sampie "Sampie color theme.")
 
-(let ((background "#c0c0c0")
-      (gutters    "#c0c0c0")
-      (gutter-fg  "#c0c0c0")
+(let ((background     "#c0c0c0")
+      (gutters        "#c0c0c0")
+      (gutter-fg      "#c0c0c0")
       (gutters-active "#c0c0c0")
-      (builtin      "#be29ec")
-      (selection  "#0000ff")
-      (text       "#333333")
-      (comments   "#004c4c")
-      (punctuation "#03396c")
-      (keywords "#008080")
-      (variables "#420420")
-      (functions "#ffffff")
-      (methods    "#420420")
-      (strings    "#ac1ee7")
-      (constants "#ff084a")
-      (macros "#03396c")
-      (numbers "#ff084a")
-      (white     "#ffffff")
-      (error "#cc0000")
-      (warning "#b3ecec")
+      (builtin        "#be29ec")
+      (selection      "#0000ff")
+      (text           "#333333")
+      (comments       "#004c4c")
+      (punctuation    "#03396c")
+      (keywords       "#008080")
+      (variables      "#420420")
+      (functions      "#ffffff")
+      (methods        "#420420")
+      (strings        "#ac1ee7")
+      (constants      "#ff084a")
+      (macros         "#03396c")
+      (numbers        "#ff084a")
+      (white          "#ffffff")
+      (error          "#cc0000")
+      (warning        "#b3ecec")
       (highlight-line "#b3ecec")
-      (line-fg "#126367"))
+      (line-fg        "#126367"))
   
   (custom-theme-set-faces
    'sampie
@@ -51,7 +55,7 @@
 
    `(default                          ((t (:foreground ,text :background ,background, :weight normal))))
    `(region                           ((t (:foreground nil :background ,selection))))
-   `(cursor                           ((t (:background ,white                        ))))
+   `(cursor                           ((t (:background ,text                        ))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
    `(highlight                        ((t (:foreground nil :background ,selection))))
