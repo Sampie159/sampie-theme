@@ -1,4 +1,4 @@
-;;; sampie-theme.el --- Sampie's theme follows the idea of "minimal" highlighting
+;;; sampie-theme.el --- Sampie's theme... dreams of blue...
 
 ;; Author: Sampie159 <Sampie159@users.noreply.github.com>
 ;; Version: 0.1
@@ -9,10 +9,7 @@
 
 ;;; Commentary:
 
-;; Sampie's theme is based on the idea of Jon Blow's theme, that is
-;; with "minimal" hightlighting, this means that hightlighting only happens
-;; in certain situations, such as type definitions, builtin keywords, variable
-;; declaration, etc...
+;; Do ya like blue? blueish greens? Maybe some purple? Light theme?
 
 ;; This file structured is based on Nick Aversano's naysayer theme
 ;; https://github.com/nickav/naysayer-theme.el
